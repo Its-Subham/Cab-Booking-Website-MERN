@@ -37,14 +37,61 @@
     .p{
       @apply text-[18px] leading-normal;
     }
+    .navbar_font{
+      @apply text-[15px] font-[500];
+    }
   }
 
   @layer utilities {
+
+    .active_link{
+      @apply text-primaryGreen relative flex-1 after:w-full after:h-[2px] after:bg-primaryGreen after:absolute after:-bottom-2;
+    }
+
+    .nav_menu {
+      @apply  relative flex-1 transition-all ;
+    }
+    .nav_menu:hover{
+      @apply text-primaryGreen;
+    }
+    
+    .nav_menu::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: theme('colors.primaryGreen');
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      transition: width .5s;
+    }
+    
+    .nav_menu:hover::after {
+      width: 100%;
+    }
+
     .btn_square_primaryGreen{
         @apply bg-primaryGreen text-white my-0 ml-[4px] mr-0 py-[8px] px-[12px];
     }
+
     .btn_square_primaryBlue{
         @apply bg-primaryBlue text-white my-0 ml-0 mr-[4px] py-[8px] px-[12px];
+    }
+
+    .flexCenter {
+      @apply flex items-center justify-center;
+    }
+  
+    .flexBetween {
+      @apply flex items-center justify-between;
+    }
+
+    .flexAround {
+      @apply flex items-center justify-around;
+    }
+  
+    .flexStart {
+      @apply flex items-center justify-start;
     }
     .services{
         @apply w-[110px] h-[110px] text-white mx-auto mb-5 bg-primaryBlue border-none rounded-[50%] text-4xl flex justify-center items-center;

@@ -1,24 +1,17 @@
 import { FaRoad } from "react-icons/fa6";
 import Home from "./pages/Home";
+import Header from "./pages/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 export default function App() {
   return (
     <>
-      <Home />
-
-
-      {/* <input type="video" />
-    <p className="text-primaryBlue">This is blue</p>
-    <p className="text-transparentBlack">This is transparent black.</p>
-    <p className="text-primaryGray">This is Primary gray.</p>
-    <button className="btn_square_primaryGreen">Submit</button>
-
-    <div className="flex">
-    <div className="services"><FaRoad /></div>
-    <div className="services"><FaRoad /></div>
-    <div className="services"><FaRoad /></div>
-    <div className="services"><FaRoad /></div>
-    </div> */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
