@@ -1,15 +1,15 @@
-import car1 from './car1.png'
-import car2 from './car2.png'
-import car3 from './car3.png'
-import car4 from './car4.png'
-import car5 from './car5.png'
-import car6 from './car6.png'
-import car7 from './car7.png'
-import car8 from './car8.png'
-import car9 from './car9.png'
-import car10 from './car10.png'
-import car11 from './car11.png'
-import car12 from './car12.png'
+import car1 from './car1.png';
+import car2 from './car2.png';
+import car3 from './car3.png';
+import car4 from './car4.png';
+import car5 from './car5.png';
+import car6 from './car6.png';
+import car7 from './car7.png';
+import car8 from './car8.png';
+import car9 from './car9.png';
+import car10 from './car10.png';
+import car11 from './car11.png';
+import car12 from './car12.png';
 
 let all_cars = [
     {

@@ -1,10 +1,12 @@
 import { FaRoad } from "react-icons/fa6";
 import Home from "./pages/Home";
+import CarSlider from "./components/CarSlider";
 
 export default function App() {
   return (
     <>
       <Home />
+      <CarSlider/>
 
 
       {/* <input type="video" />
