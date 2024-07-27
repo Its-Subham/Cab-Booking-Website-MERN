@@ -1,20 +1,31 @@
 import { Link, NavLink } from "react-router-dom";
 import Navbar from "../components/NavBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 
 
 
 const Header = () => {
 
+    //For toggle menu
     const [menuOpend, setmenuOpend] = useState(false);
     const toggleMenu = () => setmenuOpend(!menuOpend);
 
+    //set background when the window is scroll
+    const [scrollY, setScrollY] = useState(0);
+    const handleScroll = ()=>{
+        setScrollY(window.scrollY);
+    };
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleScroll);
+    },[]);
+
     return (
-        <header className="fixed top-0 left-0 m-auto  w-full bg-transparent ring-1 ring-slate-900/5 z-10">
+        <header className={`${scrollY >= 200 ? "fixed top-0 left-0 w-full h-[10%] bg-customBlack backdrop-blur-sm ring-1 ring-slate-900/5 z-10" : "fixed top-0 left-0 w-full bg-transparent ring-1 ring-slate-900/5 z-10"}`}>
             <div className="px-4 py-3 max-xs:px-2 flexBetween ">
                 {/*name*/}
-                <div className="ml-10">
+                <div className="ml-10 mt-1">
                     <Link className="text-white text-xl font-extrabold">CAB<span className="text-primaryGreen">BOOKING</span></Link>
                 </div>
                 {/* Navbar Desktop */}
