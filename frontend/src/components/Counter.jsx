@@ -3,10 +3,6 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 const Counter=()=>{
-    var yearExperienced
-    var totalCars
-    var happyCustomers
-    var totalBranches
 
     const [counterOn,setCounterOn] = useState(false)
 
