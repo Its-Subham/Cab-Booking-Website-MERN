@@ -15,6 +15,8 @@ export default function App() {
     </Routes>
     <CarSlider/>
     </BrowserRouter>
+      <Counter/>
+    <Footer/>
     </>
   )
 }
