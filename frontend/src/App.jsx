@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import CarSlider from "./components/CarSlider"
 import Footer from "./components/Footer"
 import Counter from "./components/Counter"
+import Services from "./components/Services"
 export default function App() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
       <Route path="/" element={<Home/>}/>
     </Routes>
     <CarSlider/>
+    <Services/>
     </BrowserRouter>
       <Counter/>
     <Footer/>
