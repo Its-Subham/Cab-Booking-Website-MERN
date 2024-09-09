@@ -22,7 +22,7 @@ const Header = () => {
     },[]);
 
     return (
-        <header className={`${scrollY >= 200 ? "fixed top-0 left-0 w-full h-[10%] bg-customBlack backdrop-blur-sm ring-1 ring-slate-900/5 z-10" : "fixed top-0 left-0 w-full bg-transparent ring-1 ring-slate-900/5 z-10"}`}>
+        <header className={`${scrollY >= 200 ? "fixed top-0 left-0 w-full h-[10%] z-10 transition-all duration-300 bg-customBlack backdrop-blur-sm" : "fixed top-0 left-0 w-full h-[10%] z-10 transition-all duration-300 bg-transparent"}`}>
             <div className="px-4 py-3 max-xs:px-2 flexBetween ">
                 {/*name*/}
                 <div className="ml-10 mt-1">
