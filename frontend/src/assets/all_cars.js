@@ -16,61 +16,73 @@ let all_cars = [
         id: 1,
         name: "Maruti Suzuki Celerio",
         image: car1,
+        cost: 20,
     },
     {
         id: 2,
         name: "Maruti Suzuki Wagon R",
         image: car2,
+        cost: 20,
     },
     {
         id: 3,
         name: "Tata Tiago",
         image: car3,
+        cost: 20,
     },
     {
         id: 4,
         name: "Hyundai AURA",
         image: car4,
+        cost: 20,
     },
     {
         id: 5,
         name: "Maruti Suzuki Dzire",
         image: car5,
+        cost: 20,
     },
     {
         id: 6,
         name: "Honda Amaze",
         image: car6,
+        cost: 20,
     },
     {
         id: 7,
         name: "Maruti Suzuki Ciaz",
         image: car7,
+        cost: 20,
     },
     {
         id: 8,
         name: "Maruti Suzuki Ertiga",
         image: car8,
+        cost: 20,
     },
     {
         id: 9,
         name: "Mahindra Marazzo",
         image: car9,
+        cost: 20,
     },
     {
         id: 10,
         name: "Nissan Micra",
         image: car10,
+        cost: 20,
     },
     {
         id: 11,
         name: "The Toyota Innova Crysta",
         image: car11,
+        cost: 20,
     },
     {
         id: 12,
         name: "Hyundai Xcent",
         image: car12,
+        cost: 20,
     },
 ];
 
